@@ -6,3 +6,4 @@ build
 .clang-tidy
 CMakePresets.json
 __pycache__
+.vscode
