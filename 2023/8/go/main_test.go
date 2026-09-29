@@ -23,8 +23,20 @@ func TestInstructionsBasic(t *testing.T) {
 	}
 }
 
+func TestGcd(t *testing.T) {
+	if euclidGreatestCommonDivisor(18, 48) != 6 {
+		t.Error()
+	}
+}
+
 func TestExample(t *testing.T) {
 	if run("../example.txt") != 6 {
+		t.Error()
+	}
+}
+
+func TestExample2(t *testing.T) {
+	if run2("../example2.txt") != 6 {
 		t.Error()
 	}
 }
